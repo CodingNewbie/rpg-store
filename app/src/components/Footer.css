@@ -1,0 +1,21 @@
+.footer {
+    margin-top: auto;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-links {
+    display: flex;
+    gap: 50px;
+}
+
+.nav-icon {
+    height: 175px;
+}
+
+.round-icon {
+    height: 100px;
+}
+

@@ -1,0 +1,18 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.profile {
+    height: 125px;
+    
+}
+
+.resource {
+    height: 80px;
+}
+
+.nav-links img {
+    margin-left: 30px;
+}
