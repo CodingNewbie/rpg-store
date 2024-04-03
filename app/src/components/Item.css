@@ -1,0 +1,38 @@
+.item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.item img {
+    height: 150px;
+    object-fit: cover;
+}
+
+.item h6 {
+    font-family: "Changa", sans-serif;
+    font-size: 35px;
+    font-weight: 500;
+    color: #877862;
+}
+
+.gold-frame {
+    height: 100px;
+    width: 300px;
+    background-image: url("/home/codingnewbie/repos/rpg-store/app/public/images/shop/gold-frame.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+}
+
+.price {
+    font-size: 30px;
+    font-family: "Changa", sans-serif;
+    font-weight: bold;
+    color: #f3de9f;
+    position: absolute;
+    top: 17px;
+    left: 160px;
+}

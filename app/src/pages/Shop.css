@@ -1,0 +1,35 @@
+.shop-backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.shop-container {
+    width: 1250px;
+    height: 700px;
+    background-image: url("/home/codingnewbie/repos/rpg-store/app/public/images/shop/background.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding-top: 140px;
+    padding-bottom: 50px;
+}
+
+.button-close {
+    position: absolute;
+    height: 85px;
+    bottom: 760px;
+    left: 1200px;
+}

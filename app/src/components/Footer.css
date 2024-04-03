@@ -13,9 +13,21 @@
 
 .nav-icon {
     height: 175px;
+    transition: transform 0.2s;
 }
 
 .round-icon {
     height: 100px;
+    transition: transform 0.2s;
 }
 
+.nav-icon:hover,
+.round-icon:hover {
+    transform: scale(1.1);
+}
+
+.nav-icon:active,
+.round-icon:active {
+    transform: scale(1);
+    transition: transform 0s;
+}
