@@ -1,4 +1,4 @@
-.shop-backdrop {
+.messages-backdrop {
     position: fixed;
     top: 0;
     left: 0;
@@ -11,10 +11,10 @@
     z-index: 1000;
 }
 
-.shop-container {
-    width: 1250px;
-    height: 700px;
-    background-image: url("/home/codingnewbie/repos/rpg-store/app/public/images/shop/background.png");
+.messages-container {
+    width: 1500px;
+    height: 1000px;
+    background-image: url("/home/codingnewbie/repos/rpg-store/app/public/images/messages-menu.png");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -23,13 +23,11 @@
     justify-content: center;
     align-items: flex-start;
     flex-wrap: wrap;
-    padding-top: 140px;
-    padding-bottom: 50px;
 }
 
-.shop-close {
+.messages-close {
     position: absolute;
     height: 85px;
-    bottom: 760px;
-    left: 1200px;
+    bottom: 795px;
+    left: 1225px;
 }
