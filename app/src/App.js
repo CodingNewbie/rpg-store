@@ -14,7 +14,7 @@ function App() {
     const players = [
         {
             name: "Adam Schmidt",
-            gold: 1000000,
+            gold: 20000,
         },
     ];
 

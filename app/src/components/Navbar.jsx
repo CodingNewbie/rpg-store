@@ -4,7 +4,22 @@ import "./Navbar.css";
 function Navbar({ gold }) {
     return (
         <div className="navbar">
-            <img className="profile" src="/images/profile.png" alt="" />
+            <div className="profile">
+                <img src="/images/profile.png" alt="" />
+                <div className="wheel-container">
+                    <img
+                        src="/images/profile-wheel.png"
+                        alt=""
+                        className="profile-wheel"
+                    />
+                    <img
+                        src="/images/level.png"
+                        alt=""
+                        className="profile-level"
+                    />
+                </div>
+            </div>
+
             <nav className="nav-links">
                 <img className="resource" src="/images/life.png" alt="" />
                 <Gold gold={gold} />

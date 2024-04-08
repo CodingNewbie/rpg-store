@@ -5,7 +5,40 @@
 }
 
 .profile {
+    position: relative;
+}
+
+.profile img {
     height: 125px;
+}
+
+.wheel-container {
+    position: absolute;
+    top: -3px;
+    left: -9px;
+    width: 125px;
+    height: 125px;
+}
+
+.profile .profile-wheel {
+    animation: spin 10s linear infinite;
+    transform-origin: center;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.wheel-container .profile-level {
+    position: absolute;
+    top: 80px;
+    left: 90px;
+    height: 60px;
 }
 
 .resource {

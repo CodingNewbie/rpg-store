@@ -10,6 +10,7 @@ function Shop({ onClose, addToInventory }) {
             price: 800,
             category: "Consumable",
             image: "red-potion.png",
+            stackable: true,
             _id: "0001",
         },
         {
@@ -17,6 +18,7 @@ function Shop({ onClose, addToInventory }) {
             price: 900,
             category: "Armor",
             image: "shield.png",
+            stackable: false,
             _id: "0002",
         },
         {
@@ -24,6 +26,7 @@ function Shop({ onClose, addToInventory }) {
             price: 600,
             category: "Weapon",
             image: "bow.png",
+            stackable: false,
             _id: "0003",
         },
         {
@@ -31,6 +34,7 @@ function Shop({ onClose, addToInventory }) {
             price: 300,
             category: "Weapon",
             image: "bomb.png",
+            stackable: true,
             _id: "0004",
         },
         {
@@ -38,6 +42,7 @@ function Shop({ onClose, addToInventory }) {
             price: 500,
             category: "Consumable",
             image: "plus-time.png",
+            stackable: true,
             _id: "0005",
         },
         {
@@ -45,6 +50,7 @@ function Shop({ onClose, addToInventory }) {
             price: 600,
             category: "Consumable",
             image: "lucky-chance.png",
+            stackable: true,
             _id: "0006",
         },
         {
@@ -52,6 +58,7 @@ function Shop({ onClose, addToInventory }) {
             price: 900,
             category: "Armor",
             image: "crown.png",
+            stackable: false,
             _id: "0007",
         },
         {
@@ -59,6 +66,7 @@ function Shop({ onClose, addToInventory }) {
             price: 750,
             category: "Consumable",
             image: "key.png",
+            stackable: true,
             _id: "0008",
         },
     ];

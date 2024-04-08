@@ -27,7 +27,7 @@
     padding-bottom: 50px;
 }
 
-.items-container h2 {
+.items-container .gold-count {
     position: absolute;
     width: 150px;
     font-size: 25px;
@@ -37,6 +37,17 @@
     font-weight: 600;
     color: #faaf16;
     text-align: right;
+}
+
+.items-container .item-count {
+    position: absolute;
+    top: 135px;
+    left: 755px;
+    font-family: "Changa", sans-serif;
+    font-size: 35px;
+    font-weight: 500;
+    color: #f8913f;
+    z-index: 10;
 }
 
 .items-close {
@@ -57,8 +68,18 @@
 }
 
 .inventory-slot {
-    height: 120px;
+    background-image: url(/public/images/item-slot.png);
+    height: 110px;
+    width: 110px;
     transition: 0.2s linear;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.inventory-slot img {
+    height: 90px;
 }
 
 .inventory-slot:hover {
@@ -67,4 +88,20 @@
 
 .inventory-title {
     clip-path: inset(0 140px 0 0);
+}
+
+.stack-count {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 80px;
+    left: 80px;
+    background-image: url(/public/images/item-quantity-background.png);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    font-family: "Changa", sans-serif;
+    color: #877862;
+    font-weight: 600;
 }
