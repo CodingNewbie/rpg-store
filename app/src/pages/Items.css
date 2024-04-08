@@ -41,13 +41,15 @@
 
 .items-container .item-count {
     position: absolute;
-    top: 135px;
-    left: 755px;
+    top: 139px;
+    left: 740px;
     font-family: "Changa", sans-serif;
-    font-size: 35px;
+    font-size: 33px;
     font-weight: 500;
     color: #f8913f;
     z-index: 10;
+    text-align: right;
+    width: 50px;
 }
 
 .items-close {
