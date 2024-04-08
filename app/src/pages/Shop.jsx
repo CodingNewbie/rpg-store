@@ -1,8 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Shop.css";
 import Item from "../components/Item";
+import PurchaseConfirmation from "../components/PurchaseConfirmation";
 
-function Shop({ onClose }) {
+function Shop({ onClose, addToInventory }) {
     const items = [
         {
             title: "Potion",
@@ -61,6 +62,15 @@ function Shop({ onClose }) {
             _id: "0008",
         },
     ];
+    const [showPurchaseConfirmation, setShowPurchaseConfirmation] =
+        useState(false);
+    const [selectedItem, setSelectedItem] = useState(null);
+
+    const onPurchase = (item) => {
+        setSelectedItem(item);
+        setShowPurchaseConfirmation(!showPurchaseConfirmation);
+    };
+
     return (
         <div className="shop-backdrop">
             <div className="shop-container">
@@ -71,8 +81,30 @@ function Shop({ onClose }) {
                     className="shop-close"
                 />
                 {items.map((item) => (
-                    <Item key={item._id} info={item} />
+                    <Item
+                        key={item._id}
+                        info={item}
+                        onPurchase={() => onPurchase(item)}
+                    />
                 ))}
+
+                {showPurchaseConfirmation && selectedItem && (
+                    <PurchaseConfirmation
+                        item={selectedItem}
+                        onConfirm={() => {
+                            console.log("Item purchased: ", selectedItem.title);
+                            addToInventory(selectedItem);
+                            setShowPurchaseConfirmation(false);
+                        }}
+                        onCancel={() => {
+                            console.log(
+                                "Purchase canceled for: ",
+                                selectedItem.title
+                            );
+                            setShowPurchaseConfirmation(false);
+                        }}
+                    />
+                )}
             </div>
         </div>
     );

@@ -2,6 +2,7 @@ import "./Footer.css";
 import React from "react";
 
 function Footer({
+    onOpenItems,
     onOpenShop,
     onOpenMessages,
     onOpenMission,
@@ -12,7 +13,12 @@ function Footer({
         <div className="footer">
             <img src="/images/friend.png" alt="" className="round-icon" />
             <nav className="footer-links">
-                <img src="/images/items.png" alt="" className="nav-icon" />
+                <img
+                    src="/images/items.png"
+                    alt=""
+                    className="nav-icon"
+                    onClick={onOpenItems}
+                />
                 <img
                     src="/images/shop.png"
                     alt=""

@@ -1,0 +1,14 @@
+.gold-container {
+    position: relative;
+}
+
+.gold-container h2 {
+    position: absolute;
+    width: 150px;
+    font-size: 30px;
+    font-family: "Changa", sans-serif;
+    left: 95px;
+    bottom: 60px;
+    color: #ddc6ab;
+    text-align: right;
+}
