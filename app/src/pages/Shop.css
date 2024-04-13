@@ -14,7 +14,7 @@
 .shop-container {
     width: 1250px;
     height: 700px;
-    background-image: url("/home/codingnewbie/repos/rpg-store/app/public/images/shop/background.png");
+    background-image: url("/public/images/shop/background.png");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;

@@ -14,7 +14,7 @@
 .settings-container {
     width: 1500px;
     height: 1000px;
-    background-image: url("/home/codingnewbie/repos/rpg-store/app/public/images/settings-menu.png");
+    background-image: url("/public/images/settings-menu.png");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;

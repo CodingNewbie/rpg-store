@@ -20,7 +20,7 @@
 .gold-frame {
     height: 100px;
     width: 300px;
-    background-image: url("/home/codingnewbie/repos/rpg-store/app/public/images/shop/gold-frame.png");
+    background-image: url("/public/images/shop/gold-frame.png");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
